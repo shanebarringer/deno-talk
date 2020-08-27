@@ -12,7 +12,7 @@ According to the Deno site
 
 > Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/v1.png" style="zoom:50%;" />
+<img src="./images/v1.png" style="zoom:50%;" />
 
 So what does that mean to us? 
 
@@ -49,7 +49,7 @@ _fun fact: Deno was originally written in Go until concerns began to arise over 
 
 ## Is it pronounced den-o or dē-no?
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/deno_hr_circle.svg" style="zoom:25%;" />
+<img src="./images/deno_hr_circle.svg" style="zoom:25%;" />
 
 In the talk linked above (and subsequent talks over the next months) Ryan always referred to it as den-o. The team eventually decided that since they already had a Dinosaur mascot dē-no would be a better fit. 
 
@@ -65,7 +65,7 @@ It's imperative to understand that Node will be around for a very long time and 
 
 Deno is simply an alternative based on a more modern approach to software development. After all, a lot has changed since Node was introduced in 2009...
 
-![](/Users/shane.barringer/Documents/deno-talk/images/goldbloom-js.gif)
+![](./images/goldbloom-js.gif)
 
 In a recent interview with Deno core team member Kitson Kelly, he made the astute observation that:
 
@@ -88,7 +88,7 @@ Like Node, Deno makes use of the trusty Chrome V8 Engine - a battle-tested tool 
 As stated previously, Deno's internals are written in Rust. 
 Through the [rusty_v8](https://crates.io/crates/rusty_v8) crate (library) Deno is able to facilitate communication between Rust and V8.  
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/rusty.png" style="zoom:25%;" /> <img src="/Users/shane.barringer/Documents/deno-talk/images/v8.png" style="zoom:25%;" />
+<img src="./images/rusty.png" style="zoom:25%;" /> <img src="./images/v8.png" style="zoom:25%;" />
 
 ----
 
@@ -107,19 +107,19 @@ Well, according to the [docs](https://docs.rs/tokio/0.2.22/tokio)
 
 For our purposes, we can say that Tokio essentially takes the place of libuv for Deno
 
-![deno-process-from-docs](/Users/shane.barringer/Documents/deno-talk/images/schematic_v0.2.png)
+![deno-process-from-docs](./images/schematic_v0.2.png)
 
 
 
 A comparison of the Node architecture with libuv
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/libuv.png" alt="libuv" style="zoom:80%;" />
+<img src="./images/libuv.png" alt="libuv" style="zoom:80%;" />
 
 
 
 One more take from someone on the Rust core team:
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/rustsystem.jpg" style="zoom:100%;" />
+<img src="./images/rustsystem.jpg" style="zoom:100%;" />
 
 
 
@@ -129,7 +129,7 @@ One more take from someone on the Rust core team:
 
 Aside from the internals and architecture, Deno presents a few key advantages. Let's take a look at several highlights. 
 
-![](/Users/shane.barringer/Documents/deno-talk/images/deno_city.jpeg)
+![](./images/deno_city.jpeg)
 
 ----
 
@@ -143,7 +143,7 @@ In addition to the TypeScript support, Deno ships type definitions for the runti
 
 ### JS => TS => Rust
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/jslogo.png" style="zoom:10%;" />    :arrow_right:    <img src="/Users/shane.barringer/Documents/deno-talk/images/tslogo.jpeg" style="zoom:10%;" />  :arrow_right: <img src="/Users/shane.barringer/Documents/deno-talk/images/rustlogo.png" style="zoom:10%;" />
+<img src="./images/jslogo.png" style="zoom:10%;" />    :arrow_right:    <img src="./images/tslogo.jpeg" style="zoom:10%;" />  :arrow_right: <img src="./images/rustlogo.png" style="zoom:10%;" />
 
 Part of the vision Deno promotes is that your code should be able to evolve. 
 
@@ -237,7 +237,7 @@ If we follow the source code link [https://deno.land/std/http/server.ts:360:0](h
 
 From there, we can review the code or click the `View Documentation` button to see the docs hosted in a nice format on the very pleasant `deno doc` website. 
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/deno-doc-http.png" style="zoom:67%;" />
+<img src="./images/deno-doc-http.png" style="zoom:67%;" />
 
 #### `--json`
 
@@ -326,7 +326,7 @@ Also, similar to Go, you can simply import packages via URL or file paths. These
 - CDN's such as [Pika/Snowpack](https://www.pika.dev/about) or [jspm](https://jspm.org/)
 - Private http servers
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/pika.png" alt="Pika" style="zoom:35%;" /> <img src="/Users/shane.barringer/Documents/deno-talk/images/skypack-og.png" style="zoom:18%;" /> <img src="/Users/shane.barringer/Documents/deno-talk/images/jspm.png" style="zoom:35%;" /> ![](/Users/shane.barringer/Documents/deno-talk/images/deno-3rd-party.png)
+<img src="./images/pika.png" alt="Pika" style="zoom:35%;" /> <img src="./images/skypack-og.png" style="zoom:18%;" /> <img src="./images/jspm.png" style="zoom:35%;" /> ![](./images/deno-3rd-party.png)
 
 
 
@@ -366,7 +366,7 @@ console.log(_.camelCase('__FOO_BAR__'));
 
 In addition, there are interesting projects like [Denoify](https://deno.land/x/denoify@v0.5.2) popping up that aim to assist library maintainers in supporting Node/npm & Deno moving forward.
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/denoify.png" style="zoom:80%;" />
+<img src="./images/denoify.png" style="zoom:80%;" />
 
 #### 
 
@@ -376,7 +376,7 @@ In addition, there are interesting projects like [Denoify](https://deno.land/x/d
 
 It's also worth noting that a convention has been established around the idea of a `mod.ts` serving as the entry point to your module.
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/mod.png" style="zoom:50%;" />
+<img src="./images/mod.png" style="zoom:50%;" />
 
 Take `deno.land/std@0.66.0/http/mod.ts` as an example: 
 
@@ -434,7 +434,7 @@ _note: this file has been truncated for clarity. The full file can be seen @ [ht
 Speaking of configurations, you may have noticed that `package.json` has yet to come up. 
 This is because deno does not **need** a `package.json` file. 
 
-![bart-woah](/Users/shane.barringer/Documents/deno-talk/images/bart-whoa.gif)
+![bart-woah](./images/bart-whoa.gif)
 
 <center><em>I'll give you a minute</em></center>
 
@@ -446,7 +446,7 @@ It's hard to remember a time before `package.json` was the default, but it hasn'
 
 While we're on the subject of `node_modules` it's now time to breath a sigh of relief as I'm happy to inform you that Deno does not require `node_modules`to use dependencies. 
 
-<img src="/Users/shane.barringer/Documents/deno-talk/images/node_modules.png" style="zoom:75%;" />
+<img src="./images/node_modules.png" style="zoom:75%;" />
 
 
 
@@ -537,7 +537,7 @@ In other words, Deno takes an opt-in approach where you grant permissions via co
 
 For example, take the example we used earlier with the http module from the standard library (snippet below). If we remove the `--allow-net` flag you'll get the following message
 
-![](/Users/shane.barringer/Documents/deno-talk/images/allow-net.png)
+![](./images/allow-net.png)
 
 
 
